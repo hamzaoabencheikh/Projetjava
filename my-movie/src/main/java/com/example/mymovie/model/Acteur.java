@@ -4,7 +4,9 @@ import java.util.Date;
 import java.util.List;
 
 public class Acteur {
+
     private String nom;
+    private String prenom;
     private Date datenaissance;
     private List<Film> filmography;
 

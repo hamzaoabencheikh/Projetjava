@@ -17,16 +17,16 @@ public class MymovieController {
 
     public MymovieController() {
         acteurs = new ArrayList<>();
-        Acteur acteur1 = new Acteur("Hamza", "Ben",  new Date());
-        Acteur acteur2 = new Acteur("Hamid","Ouled", new Date());
-        acteurs.add(acteur1);
-        acteurs.add(acteur2);
+        Acteur acteur = new Acteur("Hamza", "Ben",  new Date());
+        Acteur acteurbis = new Acteur("Hamid","Ouled", new Date());
+        acteurs.add(acteur);
+        acteurs.add(acteurbis);
 
         films = new ArrayList<>();
-        Film film1 = new Film("Filiere", "Tom", acteur1, new Date());
-        Film film2 = new Film("Filierebis", "John", acteur2, new Date());
-        films.add(film1);
-        films.add(film2);
+        Film film = new Film("film", "Tom", acteur, new Date());
+        Film filmbis = new Film("serie", "John", acteurbis, new Date());
+        films.add(film);
+        films.add(filmbis);
     }
     @GetMapping("/acteurs")
     public List<Acteur> getActeurs() {
